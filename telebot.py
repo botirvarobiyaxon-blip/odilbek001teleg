@@ -11,7 +11,7 @@ from aiogram.types import (
 # 1algaritim nima va u nima ish qiladi, nima yaratish mumkin imtihonni 100% tugatib kelish 
 
 
-API_TOKEN = "8711283606:AAH1vmRwZhJ4K3cjvEE_qhfcRnskNk-TGbE"
+TOKEN = os.getenv('BOT_TOKEN')
 
 
 
@@ -19,7 +19,7 @@ API_TOKEN = "8711283606:AAH1vmRwZhJ4K3cjvEE_qhfcRnskNk-TGbE"
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
